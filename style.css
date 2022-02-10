@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-image: url(img/png/fundo.png);
+	background-color: #BC9C91;
+	background-repeat: no-repeat;
+	height: 1500px;
+}
+   
+.header{
+	background-image: url('img/fotos/barraChocInteira.png');
+	background-position:center  ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color:#ffffff;
+	padding: 300px 0;
+}
+@media (max-width:595px) {
+    .header{ 
+		background-image: url(img/fotos/3brigadeiros.png);   
+         
+    }
+        }
+.logo{
+	width: 25%;
+	position: relative;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width:595px) {
+    .logo{ 
+		width: 60%;
+		
+          
+    }
+        }
+.img-site{
+	background-image: url('img/png/logo/PalomaRabelo\ \(10\).jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color:#fff;
+	padding: 200px 0;
+}
+
+/*----------------------------------*/
+.menu {
+    list-style: none;
+    border: none;
+    float: left;
+	position: relative;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	top: 300px;
+    
+    
+
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #BC9C91;
+   
+}
+
+.menu li a {color: white; text-decoration: none; padding: 5px 10px; display: block;}
+
+
+.menu li a:hover{
+    background:rgb(247, 4, 85); 
+    color:white; 
+    text-shadow:0px 0px 5px #BC9C91; 
+}
+
+.menu li  ul{
+    position:absolute; 
+    top:25px; 
+    left:0;
+    background-color:rgba(247, 4, 85, 0.288); 
+    display:none;
+}  
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:1px solid #BC9C91; 
+    display:block; 
+    width:150px;
+    }
+
+    .coluna{
+        float: left;
+        width: 33.33%;
+    }
+/*-----------------------------------*/
+.galeria{
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width:100% ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+   
+}
+
+@media (max-width:595px) {
+    .galeria{ width:100%;
+        height: 170px;
+        position: relative;
+		top: 30%;
+        
+            
+          
+    }
+        }
+
+
+.galeria-items{
+   
+    
+    width: 120px;
+    height: 170px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.galeria-items img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-items:hover{
+    transform: scale(1.1);
+    
+}
+
+/*slide--------------------*/
+.img-site .slide{
+	display: flex;
+	width: 58%;
+	height: 400px;
+	position:relative;
+	overflow: hidden;
+	top: 160px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid #FFF;
+	box-shadow: 3px 3px 3px #0006;
+	border-radius: 5px;
+  
+}
+
+@media (max-width:600px) {
+	.img-site .slide{
+	width:98%;
+	height: 400px;
+	position: relative;
+	top:200px;
+		
+	  
+}
+	}
+
+
+.foto{
+	display: flex;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 25s;
+	animation-iteration-count:infinite ;
+}
+.foto:nth-child(1){
+	animation-delay: 0s;
+}
+.foto:nth-child(2){
+	animation-delay: 5s;
+}
+.foto:nth-child(3){
+	animation-delay: 10s;
+}
+.foto:nth-child(4){
+	animation-delay: 15s;
+}
+.foto:nth-child(5){
+	animation-delay: 20s;
+}
+@keyframes animacao{
+	25%{
+		opacity: 1;
+		transform: scale(1.1,1.1);
+	}
+	50%{
+		opacity: 0;
+	}
+}
+
+
+
+
+
+/*foother-----*/
+.footer-site{
+	background-image: url(img/png/rodaPe.png);
+	background-position: top 1300px;
+	background-size: cover;
+	height: 100px;
+	padding: 50px 0;
+}
+
+.redes{
+	position: absolute;
+	top:2200px;
+	left: 50px;
+	display:flex;
+	gap: 3vw;
+	
+	
+}
+
+
+.redes img:hover{
+  transform: scale(1.3);
+  box-shadow: 5px 5px 5px #0006;
+  border-radius: 8px;
+  flex-grow: 1;
+  transition: transform .5s linear;
+}
+
