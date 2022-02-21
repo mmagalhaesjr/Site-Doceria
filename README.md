@@ -1,5 +1,5 @@
 # Criando um site para a empresa de uma amiga.
-Este projeto de um site  institucional para divulgação da marca Doceria .<br>
+Este projeto de um site  institucional para divulgação da marca .<br>
 tecnologias usadas : HTML5,CSS3
  <br>
 
