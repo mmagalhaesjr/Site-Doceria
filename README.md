@@ -4,6 +4,6 @@ tecnologias usadas : HTML5,CSS3
  <br>
 
 
-Projeto focando na responsividade na adaptação de diferentes tamanhos de telas. 
+Projeto focando na responsividade, adaptação de diferentes tamanhos de telas. 
 
 https://mmagalhaesjr.github.io/Site-Doceria/
